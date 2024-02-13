@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <button id="search"><i class="fa-solid fa-magnifying-glass"></i>Start Searching...</button>
+        <div id="id">
+            <h3>Jim</h3>
+        </div>
+
+    </div>
+
+    <div id="collection">
+        <h1 id="coll">Collection Harry Potter </h1>
+        <span id="logo">
+            <button  ><i class="fa-solid fa-chevron-right"></i></button> 
+        </span>
+    </div>
+    <script src="log.js"></script>
+
+    <div id="sort_ToToggle" style="display: none;">
+        <h1>Low to High
+        </h1><hr>
+        <h1>High to Low</h1><hr>
+        <h1>Most Popular</h1><hr>
+        <h1>Latest</h1>
+      </div>
+
+      <div id="List_ToToggle" style="display: none;">
+        <h1>Business</h1><hr>
+        <h1>Science</h1><hr>
+        <h1>Art</h1><hr>
+        <h1>Fantasy</h1><hr>
+        <h1>Horror</h1><hr>
+        <h1>Mystery</h1><hr>
+        <h1>Classics</h1>
+      </div>
+    <button onclick="toggleElement()" id="sort-by"><i class="fa-solid fa-eye"></i>Sort by</button>
+    <button onclick="ListElement()" id="list"><i class="fa-solid fa-list"></i>Title <i id="down" class="fa-solid fa-arrow-down"></i></button>
+    <button id="filter"><i class="fa-solid fa-bars"></i>Filter</button>
+    <div class="top">
+        <h2>Welcome to Tim's Library</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reprehenderit veniam excepturi sit tempora ab
+            cum libero laudantium, dolor, delectus dignissimos ex explicabo et officiis enim <br>asperiores culpa est
+            cupiditate.</p>
+
+        <div id="book-harry">
+            <div id="book1"></div>
+            <div id="book2"></div>
+            <div id="book3"></div>
+            <div id="book4"></div>
+            <div id="book5"></div>
+            <div id="book6"></div>
+            <div id="book7"></div>
+            <div id="book8"></div>
+            <div id="book9"></div>
+        </div>
+    </div>
+
+    <div id="topics">
+        <i class="fa-solid fa-book" id="name">Tim<span id="color">'s</span> Library </i>
+        <div id="select">
+            <li><a href="#">
+                    <span id="color"> <i class="fa-solid fa-arrow-right"></span></i> Library</a></li>
+        </div>
+
+        <li><a href="#">Recommendation</a></li>
+        <li><a href="#">Bookmarks</a></li>
+        <li><a href="#">Issue Books</a></li>
+        <li><a href="#">Renewal & Return</a></li>
+        <li> <a href="#">Fine & Penalty</a></li>
+        <div class="info">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Account settings</a></li>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
