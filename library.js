@@ -13,3 +13,13 @@ function toggleElement() {
       element.style.display = 'none';
     }
   }
+
+  
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+  
+  themeToggleBtn.addEventListener('click', function() {
+      // Toggle between light and dark themes
+      body.classList.toggle('light-theme');
+      body.classList.toggle('dark-theme');
+  });

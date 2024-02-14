@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <button id="theme-toggle">Change Theme</button>
     <div>
         <button id="search"><i class="fa-solid fa-magnifying-glass"></i>Start Searching...</button>
         <div id="id">
@@ -45,7 +46,15 @@
       </div>
     <button onclick="toggleElement()" id="sort-by"><i class="fa-solid fa-eye"></i>Sort by</button>
     <button onclick="ListElement()" id="list"><i class="fa-solid fa-list"></i>Title <i id="down" class="fa-solid fa-arrow-down"></i></button>
-    <button id="filter"><i class="fa-solid fa-bars"></i>Filter</button>
+    <!-- <input type="button" id="filter"><i class="fa-solid fa-bars"></i> -->
+    <select id="filter" placeholder="Filter">
+        <i class="fa-solid fa-bars"></i>
+        <option value="1">Filter</option>
+        <option value="1">Genre</option>
+        <option value="Price">Price</option>
+        <option value="1">Age Group</option>
+        <option value="1">Rating</option>
+      </select>
     <div class="top">
         <h2>Welcome to Tim's Library</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reprehenderit veniam excepturi sit tempora ab

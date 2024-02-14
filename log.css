@@ -1,10 +1,13 @@
-#name {
+body{
+    color: #0d0707;
+}
+    #name {
     font-weight: bolder;
     color: rgb(59, 47, 113);
     font-size: 21px;
-    position: relative;
+     position: relative;
     top: 100px;
-    align-items: center;
+    align-items: center; 
 }
 
 #search {
@@ -29,9 +32,6 @@ li {
 a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
-
-
 }
 
 #id {
@@ -81,7 +81,6 @@ a:hover {
     width: 800px;
     font-size: small;
     background-color: rgb(224, 224, 224);
-    color: black;
     font-weight: 400;
     border-radius: 10px;
     position: relative;
@@ -101,14 +100,6 @@ a:hover {
     
 }
 
-/* #se {
-    height: 40px;
-    width: 800px;
-    color: gray;
-    border: none;
-    background-color: rgb(255, 247, 247);
-    text-align: start;
-} */
 
 #sort-by,
 #list,
@@ -138,14 +129,13 @@ a:hover {
     left: 300px;
     top: 150px;
     font-size: 30px;
-    color: rgb(78, 45, 4);
+    /* color: rgb(78, 45, 4); */
     z-index: 0;
 }
 
 #book-harry {
     height: 450px;
     width: 800px;
-   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -169,14 +159,14 @@ a:hover {
 }
 
 
-#book1:hover,
+/* #book1:hover,
 #book5:hover,
 #book6:hover,
 #book7:hover,
 #book8:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 10px purple;
-}
+} */
 
 #book1 {
     background-image: url("https://prodimage.images-bn.com/pimages/9781339018140_p0_v9_s1200x630.jpg");
@@ -218,29 +208,51 @@ a:hover {
     background-size: cover;
 }
 #sort_ToToggle{
-    height: 200px;
+    height: 150px;
     width: 150px;
-    font-size: 10px;
-    background-color: rgb(234, 233, 230);
-    border: 1px solid black;
+    font-size: 8px;
+    background-color: rgb(181, 161, 208);
+    border: 2px solid black;
     border-radius: 3px;
    padding-left: 15px;
   position: absolute;
   right: 290px;
+  top: 165px;
   color: rgb(52, 72, 89);
   z-index: 2;
 }
 #List_ToToggle{
-    height: 320px;
+    height: 150px;
     width: 150px;
-    font-size: 9px ;
-    background-color: rgb(234, 233, 230);
-    border: 1px solid black;
+    font-size: 8px ;
+    background-color: rgb(181, 161, 208);
+    border: 2px solid black;
     border-radius: 3px;
    padding-left: 15px;
   position: absolute;
   right: 180px;
+  top: 165px;
 color: rgb(52, 72, 89);
   z-index: 1;
+  overflow-y: auto;
 
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark theme */
+body.dark-theme, a.dark-theme {
+    background-color: rgb(20, 18, 18);
+    color: #ffffff;
+}
+
+#theme-toggle{
+    position: fixed;
+   top: 20px;
+   right: 40px;
+   color: #ffffff;
+   background-color: rgb(41, 3, 76);
 }
